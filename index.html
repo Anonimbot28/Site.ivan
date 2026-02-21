@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PresentationLab — ПЗ для презентацій</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="settings-panel.css">
+  <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body class="is-loading">
+
+  <!-- BACKGROUND -->
+  <div class="bg-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar reveal">
+        <a class="brand" href="index.html">
+          <span class="brand-badge"></span>
+          <div>
+            <span>PresentationLab</span>
+            <small></small>
+          </div>
+        </a>
+
+        <!-- БУРГЕР МЕНЮ -->
+        <button class="burger-icon" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a class="active" href="index.html">Головна</a>
+          <a href="power-point.html">PowerPoint</a>
+          <a href="google-slides.html">Google Slides</a>
+          <a href="canva.html">Canva</a>
+          <a href="prezi.html">Prezi</a>
+          <a href="compare.html">Порівняння</a>
+          <a href="works.html">Мої роботи</a>
+          <a href="about-me.html">Про мене</a>
+        </div>
+
+        <!-- МОБІЛЬНЕ МЕНЮ -->
+        <nav class="mobile-nav">
+          <a class="active" href="index.html">Головна</a>
+          <a href="power-point.html">PowerPoint</a>
+          <a href="google-slides.html">Google Slides</a>
+          <a href="canva.html">Canva</a>
+          <a href="prezi.html">Prezi</a>
+          <a href="compare.html">Порівняння</a>
+          <a href="works.html">Мої роботи</a>
+          <a href="about-me.html">Про мене</a>
+        </nav>
+      </nav>
+      <div class="overlay"></div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="card reveal">
+            <span class="pill"><span class="dot"></span>Навчальний проєкт</span>
+            <h1 class="hero-title">
+              Презентації —
+              <span class="grad">швидко, стильно, впевнено</span>
+            </h1>
+            <p class="lead">
+              PresentationLab — навчальний сайт про популярні програми
+              для створення презентацій та роботи з дизайном.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#software">Програми</a>
+              <a class="btn" href="#tips">Поради</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric"><b>4</b><span>інструменти</span></div>
+              <div class="metric"><b>12+</b><span>критеріїв</span></div>
+              <div class="metric"><b>PDF</b><span>приклади</span></div>
+            </div>
+          </div>
+          <div class="card hero-media reveal">
+            <img src="Image/prez.png" alt="Презентації">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOFTWARE -->
+    <section class="section" id="software">
+      <div class="container">
+        <h2 class="reveal">Програми для презентацій</h2>
+        <p class="lead reveal">Інструменти для навчання, бізнесу та публічних виступів.</p>
+        <div class="grid-3">
+          <a class="tile reveal" href="power-point.html">
+            <h3>PowerPoint</h3>
+            <p>Класичний контроль дизайну та анімацій.</p>
+          </a>
+          <a class="tile reveal" href="google-slides.html">
+            <h3>Google Slides</h3>
+            <p>Онлайн-співпраця та робота в хмарі.</p>
+          </a>
+          <a class="tile reveal" href="canva.html">
+            <h3>Canva</h3>
+            <p>Шаблони та швидкий дизайн.</p>
+          </a>
+        </div>
+        <div class="grid-2" style="margin-top:16px">
+          <a class="tile reveal" href="prezi.html">
+            <h3>Prezi</h3>
+            <p>Динамічні презентації з рухом.</p>
+          </a>
+          <div class="tile reveal">
+            <h3>Про сайт</h3>
+            <p>Порівняння інструментів та приклади робіт.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARE -->
+    <section class="section" id="compare">
+      <div class="container">
+        <h2 class="reveal">Порівняння можливостей</h2>
+        <div class="card reveal">
+          <table class="table">
+            <tr>
+              <th>Програма</th><th>Офлайн</th><th>Команда</th><th>Дизайн</th>
+            </tr>
+            <tr><td>PowerPoint</td><td>Так</td><td>Так</td><td>Повний</td></tr>
+            <tr><td>Google Slides</td><td>Обмежено</td><td>Так</td><td>Простий</td></tr>
+            <tr><td>Canva</td><td>Експорт</td><td>Так</td><td>Шаблони</td></tr>
+            <tr><td>Prezi</td><td>Залежить</td><td>Так</td><td>Ефектний</td></tr>
+          </table>
+          <div class="callout reveal" id="tips">
+            <h3>Порада</h3>
+            <p>Ніяких порад бо я так хочу і мені всерівно</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= ФУТЕР ================= -->
+  <footer class="footer-extended">
+    <div class="footer-container">
+
+      <div class="footer-top">
+
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper location-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3>Адреса</h3>
+          <p>Україна, м. Рівне<br>ВПУ №1</p>
+        </div>
+
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper phone-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Телефон</h3>
+          <p>
+            <a href="tel:+380335316031">(033) 531-60-31</a><br>
+            <a href="tel:+380935316031">(093) 531-60-31</a>
+          </p>
+        </div>
+
+        <div class="footer-contact-box">
+          <div class="footer-icon-wrapper email-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:jungarikbigi@gmail.com">jungarikbigi@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-middle">
+
+        <div class="footer-column">
+          <h4><span class="col-dot" style="background:#6c63ff;box-shadow:0 0 8px #6c63ff"></span>Програми</h4>
+          <ul>
+            <li><a href="power-point.html"><span class="link-arrow">→</span>Microsoft PowerPoint</a></li>
+            <li><a href="google-slides.html"><span class="link-arrow">→</span>Google Slides</a></li>
+            <li><a href="canva.html"><span class="link-arrow">→</span>Canva Online</a></li>
+            <li><a href="prezi.html"><span class="link-arrow">→</span>Prezi Presentation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4><span class="col-dot" style="background:#00c9a7;box-shadow:0 0 8px #00c9a7"></span>Корисне</h4>
+          <ul>
+            <li><a href="compare.html"><span class="link-arrow">→</span>Порівняння програм</a></li>
+            <li><a href="works.html"><span class="link-arrow">→</span>Приклади презентацій</a></li>
+            <li><a href="index.html#tips"><span class="link-arrow">→</span>Поради з дизайну</a></li>
+            <li><a href="index.html#software"><span class="link-arrow">→</span>Огляд інструментів</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4><span class="col-dot" style="background:#f7b731;box-shadow:0 0 8px #f7b731"></span>Інформація</h4>
+          <ul>
+            <li><a href="about-me.html"><span class="link-arrow">→</span>Про автора</a></li>
+            <li><a href="index.html"><span class="link-arrow">→</span>Головна сторінка</a></li>
+            <li><a href="index.html#compare"><span class="link-arrow">→</span>Можливості</a></li>
+            <li><a href="works.html"><span class="link-arrow">→</span>Портфоліо робіт</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="footer-socials">
+          <a href="viber://chat?number=%2B380935316031" class="f-social-btn f-viber" title="Viber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.4 0C9.473.028 5.333.344 3.02 2.467 1.302 4.187.696 6.7.633 9.817.57 12.933.488 18.776 6.12 20.36h.003l-.004 2.644s-.037.977.61 1.176c.777.242 1.234-.5 1.98-1.302.407-.44.972-1.084 1.397-1.58 3.85.323 6.812-.417 7.15-.525.776-.252 5.176-.816 5.892-6.657.74-6.02-.36-9.83-2.34-11.546l-.01-.007C19.22-.5 14.607.012 11.4 0zm.504 1.93c2.91 0 6.81.43 8.293 1.894 1.66 1.573 2.582 4.806 1.948 10.062-.633 5.24-4.427 5.594-5.108 5.815-.292.095-2.986.768-6.4.488 0 0-2.53 3.063-3.32 3.853-.12.12-.26.167-.352.145-.13-.03-.166-.188-.165-.414l.02-4.444c-4.917-1.4-4.61-6.5-4.552-9.17.053-2.67.573-4.78 1.99-6.312C6.04 2.21 9.486 1.93 11.904 1.93z"/>
+            </svg>
+            <span>Viber</span>
+          </a>
+
+          <a href="https://t.me/AloneBigl" target="_blank" class="f-social-btn f-telegram" title="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+            <span>Telegram</span>
+          </a>
+
+          <a href="https://wa.me/380935316031" target="_blank" class="f-social-btn f-whatsapp" title="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="footer-copyright">
+          <p>© 2026 PresentationLab &bull; ВПУ №1 м. Рівне</p>
+        </div>
+
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="scroll-top-btn" aria-label="Вгору">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader-content">
+      <div class="loader-spinner">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="loader-core"></div>
+      </div>
+      <div class="loader-particles">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="loader-text">Loading</div>
+    </div>
+  </div>
+
+  <style>
+  /* ===== ФУТЕР ===== */
+  .footer-extended {
+    background: linear-gradient(180deg, #0d1117 0%, #080b10 100%);
+    padding: 64px 0 0;
+    margin-top: 80px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .footer-extended::before {
+    content: '';
+    position: absolute;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(108,99,255,0.08), transparent 70%);
+    top: -150px; left: -100px;
+    pointer-events: none;
+  }
+  .footer-extended::after {
+    content: '';
+    position: absolute;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,201,167,0.06), transparent 70%);
+    bottom: 0; right: -100px;
+    pointer-events: none;
+  }
+  .footer-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 48px;
+  }
+  .footer-contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 28px 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, border-color 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .footer-contact-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .footer-contact-box:hover {
+    transform: translateY(-6px);
+    background: rgba(108,99,255,0.07);
+    border-color: rgba(108,99,255,0.25);
+  }
+  .footer-icon-wrapper {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    transition: transform 0.3s;
+  }
+  .footer-contact-box:hover .footer-icon-wrapper {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  .location-icon { background: rgba(108,99,255,0.15); border: 2px solid rgba(108,99,255,0.3); color: #6c63ff; }
+  .phone-icon    { background: rgba(0,201,167,0.15);  border: 2px solid rgba(0,201,167,0.3);  color: #00c9a7; }
+  .email-icon    { background: rgba(247,183,49,0.15); border: 2px solid rgba(247,183,49,0.3); color: #f7b731; }
+  .footer-contact-box h3 { font-size: 17px; font-weight: 700; margin: 0; color: #fff; }
+  .footer-contact-box p  { color: rgba(255,255,255,0.6); line-height: 1.75; margin: 0; font-size: 14px; }
+  .footer-contact-box p a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+  .footer-contact-box p a:hover { color: #fff; }
+  .footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(108,99,255,0.4) 30%, rgba(0,201,167,0.4) 70%, transparent 100%);
+    margin: 0 0 48px;
+  }
+  .footer-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+  .footer-column {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .footer-column.visible { opacity: 1; transform: translateY(0); }
+  .footer-column h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .col-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .footer-column ul { list-style: none; padding: 0; margin: 0; }
+  .footer-column ul li { margin-bottom: 10px; }
+  .footer-column ul li a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s, gap 0.25s;
+    padding: 3px 0;
+  }
+  .footer-column ul li a:hover { color: #fff; gap: 14px; }
+  .link-arrow { color: #6c63ff; font-size: 13px; transition: transform 0.2s; flex-shrink: 0; }
+  .footer-column ul li a:hover .link-arrow { transform: translateX(3px); }
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    gap: 16px;
+  }
+  .footer-socials { display: flex; gap: 10px; align-items: center; }
+
+  /* ===== КНОПКИ СОЦМЕРЕЖ — нові класи щоб не конфліктувати зі style.css ===== */
+  .f-social-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 10px 20px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    transition: transform 0.25s, box-shadow 0.25s, background 0.25s !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+  .f-social-btn:hover { transform: translateY(-3px) !important; }
+  .f-social-btn span { line-height: 1; }
+
+  /* Viber — фіолетовий */
+  .f-viber {
+    background: rgba(124,77,255,0.18) !important;
+    border: 1.5px solid rgba(124,77,255,0.5) !important;
+    color: #c4aaff !important;
+  }
+  .f-viber:hover {
+    background: rgba(124,77,255,0.32) !important;
+    box-shadow: 0 8px 28px rgba(124,77,255,0.4) !important;
+    color: #ddd0ff !important;
+  }
+
+  /* Telegram — блакитний */
+  .f-telegram {
+    background: rgba(41,182,246,0.15) !important;
+    border: 1.5px solid rgba(41,182,246,0.45) !important;
+    color: #7dd8f8 !important;
+  }
+  .f-telegram:hover {
+    background: rgba(41,182,246,0.28) !important;
+    box-shadow: 0 8px 28px rgba(41,182,246,0.38) !important;
+    color: #b3e9fd !important;
+  }
+
+  /* WhatsApp — зелений */
+  .f-whatsapp {
+    background: rgba(37,211,102,0.15) !important;
+    border: 1.5px solid rgba(37,211,102,0.45) !important;
+    color: #5de88a !important;
+  }
+  .f-whatsapp:hover {
+    background: rgba(37,211,102,0.28) !important;
+    box-shadow: 0 8px 28px rgba(37,211,102,0.38) !important;
+    color: #90f0ae !important;
+  }
+
+  .footer-copyright { flex: 1; text-align: center; }
+  .footer-copyright p { margin: 0; color: rgba(255,255,255,0.35); font-size: 13px; }
+
+  .scroll-top-btn {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(108,99,255,0.35);
+    background: rgba(108,99,255,0.12);
+    color: #8b83ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.25s;
+    outline: none;
+  }
+  .scroll-top-btn:hover {
+    background: rgba(108,99,255,0.3);
+    border-color: rgba(108,99,255,0.6);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(108,99,255,0.4);
+  }
+
+  @media (max-width: 768px) {
+    .footer-top, .footer-middle { grid-template-columns: 1fr; gap: 16px; }
+    .footer-bottom { flex-wrap: wrap; justify-content: center; text-align: center; }
+    .footer-socials { justify-content: center; }
+    .footer-copyright { flex: unset; width: 100%; order: 3; }
+    .f-social-btn span { display: none !important; }
+    .f-social-btn { padding: 11px 13px !important; }
+  }
+  </style>
+
+  <script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var loader = document.querySelector('.page-loader');
+      if (loader) {
+        loader.classList.add('hide');
+        setTimeout(function() { loader.remove(); }, 400);
+      }
+      document.body.classList.remove('is-loading');
+    }, 2000);
+  });
+
+  (function() {
+    var items = document.querySelectorAll('.footer-contact-box, .footer-column');
+    if (!items.length) return;
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry, i) {
+        if (entry.isIntersecting) {
+          setTimeout(function() { entry.target.classList.add('visible'); }, i * 90);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    items.forEach(function(el) { obs.observe(el); });
+  })();
+  </script>
+
+  <script src="script.js"></script>
+
+  <script src="settings-panel.js"></script>
+</body>
+</html>

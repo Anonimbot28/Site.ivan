@@ -1,0 +1,58 @@
+/* ======================================================
+   ANIMATED LOGO BACKGROUND
+   ====================================================== */
+
+.logo-bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.logo-bg-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: logoDrift linear infinite;
+}
+
+.logo-bg-item svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+@keyframes logoDrift {
+  0% {
+    opacity: 0;
+    transform: translateY(0px) rotate(var(--rot-start)) scale(0.7);
+  }
+  10% {
+    opacity: var(--max-opacity);
+  }
+  90% {
+    opacity: var(--max-opacity);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(var(--drift-y)) rotate(var(--rot-end)) scale(1.1);
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% { filter: drop-shadow(0 0 6px currentColor); }
+  50% { filter: drop-shadow(0 0 18px currentColor); }
+}
+
+/* Make sure main content is above background */
+body > *:not(.logo-bg-canvas) {
+  position: relative;
+  z-index: 1;
+}

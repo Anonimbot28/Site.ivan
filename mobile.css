@@ -1,0 +1,242 @@
+/* ======================================================
+   MOBILE.CSS — Доповнення для мобільних пристроїв
+   Не замінює, а доповнює style.css
+   ====================================================== */
+
+/* --- Таблиці: горизонтальний скрол на мобільних --- */
+@media (max-width: 768px) {
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Якщо таблиця не загорнута у .table-wrap */
+  .card .table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  /* --- Hero секція --- */
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-media {
+    height: 220px;
+    padding: 10px;
+  }
+
+  .hero-metrics {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-actions .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* --- Секції --- */
+  .section {
+    padding: 40px 0;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  /* --- Картки --- */
+  .card {
+    padding: 24px;
+  }
+
+  .tile {
+    padding: 20px;
+  }
+
+  /* --- Грід --- */
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* --- About hero --- */
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Футер --- */
+  .footer-extended {
+    padding: 30px 0 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-middle {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  /* --- Навбар: приховати звичайне меню, показати бургер --- */
+  .burger-icon {
+    display: flex !important;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  /* --- Мобільне меню --- */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: #1a1a2e;
+    padding: 80px 30px 30px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+
+  .mobile-nav.active {
+    right: 0;
+  }
+
+  .mobile-nav a {
+    color: rgba(238, 243, 255, 0.85);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: color 0.25s, padding-left 0.25s;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a.active {
+    color: var(--accent-main, #8b8b8b);
+    padding-left: 8px;
+  }
+
+  /* --- Overlay --- */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* --- Glow orb: менший на мобільних --- */
+  .glow-orb {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  /* --- Pill --- */
+  .pill {
+    font-size: 0.78rem;
+  }
+
+  /* --- Метрики --- */
+  .metric b {
+    font-size: 1.4rem;
+  }
+
+  /* --- Контейнер --- */
+  .container {
+    width: 94vw;
+  }
+
+  /* --- About card мінімальна висота --- */
+  .about-card {
+    min-height: auto;
+  }
+
+  /* --- Goal cards --- */
+  .goal-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Compare таблиця --- */
+  .compare-table-wrap {
+    overflow-x: auto;
+  }
+}
+
+/* --- Додаткові правки для дуже маленьких екранів --- */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.88rem;
+  }
+
+  .footer-socials {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* --- Десктоп: бургер прихований --- */
+@media (min-width: 769px) {
+  .burger-icon {
+    display: none !important;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .overlay {
+    display: none !important;
+  }
+}

@@ -1,0 +1,435 @@
+/* =========================================
+   SETTINGS PANEL — Black Edition
+   ========================================= */
+
+/* ── Кнопка відкриття ── */
+#settings-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 99999;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(10,10,10,0.9);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  transition: all 0.25s ease;
+}
+#settings-toggle:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.3);
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(0,0,0,0.6);
+}
+#settings-toggle.sp-open-btn {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.35);
+}
+
+/* ── Панель ── */
+#settings-panel {
+  position: fixed;
+  top: 70px;
+  right: 16px;
+  z-index: 99998;
+  width: 290px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.05);
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: spSlideIn 0.2s ease;
+}
+#settings-panel.sp-open {
+  display: flex;
+}
+@keyframes spSlideIn {
+  from { opacity:0; transform: translateY(-10px) scale(0.97); }
+  to   { opacity:1; transform: translateY(0) scale(1); }
+}
+
+/* ── Заголовок ── */
+.sp-header {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sp-header-icon {
+  font-size: 20px;
+}
+.sp-header-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.sp-header-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 1px;
+}
+
+/* ── Секція ── */
+.sp-section {
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sp-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 2px;
+}
+
+/* ── Рядок ── */
+.sp-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.sp-label {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.75);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.sp-label-icon { font-size: 15px; }
+
+/* ── Кнопки ── */
+.sp-btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.sp-btn:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.3);
+}
+.sp-btn.active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* ── Контроль розміру тексту ── */
+.sp-size-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.sp-size-controls button {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  line-height: 1;
+}
+.sp-size-controls button:hover {
+  background: rgba(255,255,255,0.25);
+}
+#sp-size-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 36px;
+  text-align: center;
+}
+
+/* ── Швидкість анімацій ── */
+.sp-speed-btns {
+  display: flex;
+  gap: 4px;
+}
+.sp-speed-btn {
+  flex: 1;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.6);
+  border-radius: 6px;
+  padding: 5px 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.sp-speed-btn:hover {
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+}
+.sp-speed-btn.active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* ── Прозорість фону ── */
+.sp-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sp-slider {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.15);
+  outline: none;
+  cursor: pointer;
+}
+.sp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+.sp-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+.sp-slider-val {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  min-width: 30px;
+  text-align: right;
+}
+
+/* ── Компактний режим ── */
+.sp-compact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.sp-compact-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  padding: 8px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.sp-compact-btn .cb-icon { font-size: 18px; }
+.sp-compact-btn .cb-label { font-size: 11px; color: rgba(255,255,255,0.5); }
+.sp-compact-btn:hover {
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+  border-color: rgba(255,255,255,0.25);
+}
+.sp-compact-btn.active {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.4);
+  color: #fff;
+}
+.sp-compact-btn.active .cb-label { color: rgba(255,255,255,0.7); }
+
+/* ── Посилання ВПУ ── */
+.sp-vpu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.2s;
+}
+.sp-vpu-link:hover {
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+}
+.sp-vpu-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.sp-vpu-text { line-height: 1.3; }
+.sp-vpu-sub { font-size: 11px; color: rgba(255,255,255,0.35); font-weight: 400; }
+
+/* ── Нижня зона ── */
+.sp-footer-zone {
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Кнопка скидання ── */
+#sp-reset-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 12.5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+  text-align: center;
+}
+#sp-reset-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-color: rgba(255,255,255,0.25);
+}
+
+/* ── Кнопка виходу ── */
+#sp-exit-btn {
+  background: rgba(255,60,60,0.1);
+  border: 1px solid rgba(255,60,60,0.25);
+  color: rgba(255,120,120,0.9);
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+  text-align: center;
+}
+#sp-exit-btn:hover {
+  background: rgba(255,60,60,0.25);
+  border-color: rgba(255,60,60,0.5);
+  color: #fff;
+}
+
+/* =========================================
+   LIGHT MODE
+   ========================================= */
+body.light-mode {
+  background: #f0f0f5 !important;
+  color: #111 !important;
+}
+body.light-mode .header, body.light-mode header {
+  background: rgba(255,255,255,0.94) !important;
+  border-bottom: 1px solid rgba(0,0,0,0.08) !important;
+}
+body.light-mode .card {
+  background: rgba(255,255,255,0.95) !important;
+  border-color: rgba(0,0,0,0.1) !important;
+  color: #111 !important;
+}
+body.light-mode .tile {
+  background: rgba(255,255,255,0.9) !important;
+  border-color: rgba(0,0,0,0.1) !important;
+}
+body.light-mode .nav-links a, body.light-mode .brand { color: #222 !important; }
+body.light-mode h1, body.light-mode h2, body.light-mode h3,
+body.light-mode h4, body.light-mode p, body.light-mode li,
+body.light-mode span, body.light-mode td, body.light-mode th { color: #111 !important; }
+body.light-mode .bg-grid { opacity: 0.04 !important; }
+body.light-mode .glow-orb { opacity: 0.06 !important; }
+body.light-mode .logo-bg { opacity: 0.3 !important; }
+body.light-mode footer, body.light-mode .footer-extended {
+  background: #e8e8f0 !important;
+  color: #444 !important;
+}
+body.light-mode .muted, body.light-mode .lead { color: #555 !important; }
+
+/* =========================================
+   READING MODE
+   ========================================= */
+body.reading-mode .container { max-width: 740px !important; margin-inline: auto !important; }
+body.reading-mode p, body.reading-mode li { line-height: 2 !important; font-size: 1.06em; }
+body.reading-mode .bg-grid, body.reading-mode .glow-orb { display:none !important; }
+body.reading-mode .logo-bg { opacity: 0.15 !important; }
+
+/* =========================================
+   NO ANIMATIONS MODE
+   ========================================= */
+body.no-animations *, body.no-animations *::before, body.no-animations *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* =========================================
+   COMPACT MODE
+   ========================================= */
+body.compact-mode .section { padding: 40px 0 !important; }
+body.compact-mode .hero { padding: 40px 0 !important; }
+body.compact-mode .card { padding: 24px !important; }
+body.compact-mode .tile { padding: 20px !important; }
+body.compact-mode .footer-extended { margin-top: 40px !important; }
+
+/* =========================================
+   FOCUS MODE (приховує декоративні елементи)
+   ========================================= */
+body.focus-mode .bg-grid,
+body.focus-mode .glow-orb,
+body.focus-mode .logo-bg { display: none !important; }
+body.focus-mode body { background: #05070c !important; }
+
+/* =========================================
+   HIGH CONTRAST
+   ========================================= */
+body.high-contrast {
+  filter: contrast(1.4) brightness(1.1);
+}
